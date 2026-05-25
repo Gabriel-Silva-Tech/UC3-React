@@ -1,0 +1,334 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url(../imagens/IMG_fundo_da_pagina.jpg);
+    background-repeat: no-repeat;
+    font-size: 14px;
+}
+
+main{
+    position: relative;
+    width: 90%;
+    height: 1800px;
+    background-color: rgba(155,0,0,0.5);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header{
+    position: relative;
+    width: 100%;
+    height: 160px;
+    background-image: url(../imagens/guitarras_header.jpg);
+    background-repeat: no-repeat;
+}
+
+#guitarra_cabecalho{
+    width: 100%;
+    height: 180px;
+}
+
+header nav{
+    position: absolute; 
+    display: flex;
+    width: 45%;
+    height: 60px;
+    flex-direction: row;
+    top: 65%;
+    left: 53%;
+    z-index: 2;
+}
+
+header nav a{
+    background-color: white;
+    color: #37272A;
+    text-decoration: none;
+    width: 20%;
+    height: 40px;
+    display: flex; 
+    align-items: center;
+    justify-content: space-around;
+}
+
+header nav a:hover{
+    background-color: #37272A;
+    color: white;
+    transition: all 0.5s;
+}   
+
+#home{
+    position: relative;
+    width: 100%;
+    height: 350px;
+    background-color:#BD1826;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 20px;
+}
+
+#texto_inicio{
+    padding: 30px;
+    position: relative;
+    width: 43%;
+    height: 280px;
+    background-color: #BA8A8A;
+    color: white;
+}
+
+#home p{
+    padding-top: 40px;
+}
+
+#imagem_loja{
+    position: relative;
+    width: 43%;
+    height: 280px;
+}
+
+#home div img{
+    width: 100%;
+    height: 100%;
+}
+
+#violao{
+    position: relative;
+    width: 100%;
+    height: 350px;
+    background-color: #F3FBFD;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#violao article{
+    position: relative;
+    width: 20%;
+    height: 310px;
+    background-color: #F9FBFA;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#violao article img{
+    width: 50%;
+    height: 50%;
+    border-radius: 10px;
+}
+
+.valor{
+    font-weight: bold;
+    color: #BD1826;
+}
+
+#endereco{
+    position: relative;
+    background-color: brown;
+    width: 100%;
+    height: 350px;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#mapa{
+    width: 43%;
+    height: 270px;
+    border-radius: 5px;
+}
+
+#mapa iframe{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+#texto_endereco{
+    width: 43%;
+    height: 280px;
+    color: #fff;
+    background-color: #BA8A8A;
+    padding: 30px;
+}
+
+#texto_endereco p{
+    padding-top: 40px;
+}
+
+#forma_de_contato{
+    position: relative;
+    width: 98%;
+    height: 375px;
+    background-color: #FFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+form{
+    position: relative;
+    width: 43%;
+    height: 340px;  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+form input{
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 40px;
+    width:100%;
+    padding-left: 15px;
+}
+
+textarea{
+    width:60%;
+    height:130px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+button{
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 40px;
+    width:98%;
+}
+
+#redes_sociais{
+    position: relative;
+    width: 43%;
+    height: 320px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: #000277;
+    padding-top: 80px;
+}
+
+#redes_sociais_imgs a img{
+    margin-top: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    height: 145px;
+    background-color: #000;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+#rodape_imgs{
+    width: 15%;
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+
+#rodape_imgs a img{
+    width: 30px;
+    height: 30px;
+
+
+/* --------------------------------visualização tablet----------------------------- */
+}
+@media only screen and (max-width: 480px) {
+    main{
+        width: 98%;
+        height: 2700px;
+    }
+
+    header nav{
+        width: 100%;
+        height: 40px;
+        left: 0;
+        font-size: 15px;
+    }
+
+    #home{
+        height: 680px;
+        display: flex;
+        flex-direction: column;
+        padding-top: 0;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #home div{
+        width: 90%;
+    }
+
+    #texto_inicio{
+        height: 350px;
+    }
+
+    #home p{
+        padding-top: 10px;
+    }
+
+    #violao{
+        height: 450px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    #violao article{
+        height: 100px;
+        width: 40%;
+    }
+
+    #endereco{
+        height: 600px;
+        padding-top: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    #mapa{
+        width: 90%;
+    }
+    #texto_endereco{
+        width: 90%;
+}
+
+    #forma_de_contato{
+        height: 660px;
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #forma_de_contato div{
+        width: 90%;
+        
+    }
+    form{
+        width: 90%;
+    }
+    #rodape_imgs{
+        width: 40%;
+    }
+
+}

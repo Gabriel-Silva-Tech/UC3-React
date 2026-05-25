@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 13</title>
+    <link rel="stylesheet" href="./Css/style.css" type="text/css" />
+</head>
+<body>
+    <main>
+        <header>
+             <img id="guitarra_cabecalho" src="imagens/guitarras_header.jpg" alt="">
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Quem Somos</a>
+                <a href="#">Instrumentos</a>
+                <a href="#">Endereço</a>
+                <a href="#">Contato</a>
+            </nav>
+        </header>
+
+        <section id="home">
+            <div id="texto_inicio">
+                <h2>Nossa Loja - Instrumentos Musicais</h2>
+                <p>
+                    Se você é um amante da música, está em busca de um novo instrumento musical e não abre mão de qualidade, chegou ao lugar certo! Aqui em nossa loja você encontra os melhores itens, como: teclado, piano (digital e acústico), contrabaixo, bateria, guitarra, violão, soprano e muito mais! Nossos instrumentos possuem o selo de qualidade das melhores marcas do mercado! Escolha os seus favoritos e receba-os em casa com toda a comodidade que você precisa.
+                    Confira nossas opções disponíveis e tenha em mãos instrumentos de ponta!
+                </p>
+            </div>
+            <div id="imagem_loja">
+                <img src="./imagens/loja.jpg" alt="Imagem de uma loja com várias guitarras e violões">
+            </div>
+        </section>
+        
+        <section id="violao">
+            <article class = "produto">
+                <img src="./imagens/guitarrinha.jpg" alt="Imagem de um violão">
+                <p>VIOLÃO YAMAHA C70 II CLÁSSICO NYLON ACÚSTICO NATURAL BRILHANTE</p>
+                <p class="valor">R$ 989,50</p>
+            </article>
+            <article class = "violao">
+                <img src="./imagens/guitarrinha.jpg" alt="Imagem de um violão">
+                <p>VIOLÃO YAMAHA C70 II CLÁSSICO NYLON ACÚSTICO NATURAL BRILHANTE</p>
+                <p class="valor">R$ 989,50</p>
+            </article>
+            <article class = "violao">
+                <img src="./imagens/guitarrinha.jpg" alt="Imagem de um violão">
+                <p>VIOLÃO YAMAHA C70 II CLÁSSICO NYLON ACÚSTICO NATURAL BRILHANTE</p>
+                <p class="valor">R$ 989,50</p>
+            </article>
+            <article class = "violao">
+                <img src="./imagens/guitarrinha.jpg" alt="Imagem de um violão">
+                <p>VIOLÃO YAMAHA C70 II CLÁSSICO NYLON ACÚSTICO NATURAL BRILHANTE</p>
+                <p class="valor">989,50</p>
+            </article>
+        </section>
+
+        <section id="endereco">
+            <div id="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.1229200302255!2d-46.69433512578888!3d-23.528080960368303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef8775663b04f%3A0x923835e9005f8309!2sSenac%20Lapa%20Tito!5e0!3m2!1spt-BR!2sbr!4v1772853266587!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div id="texto_endereco">
+                <h2>Nossa Loja - Instrumentos Musicais</h2>
+
+                <p>Está situada na Rua Tito, 54 - Pompéia, próximo ao teatro Cacilda Becker, em uma construção do século XIX, em uma área de 500m2, com uma variada gama de instrumentos, em um ambiente agradável para toda a família!</p>
+            </div>
+        </section>
+
+        <section id="forma_de_contato">
+            
+            <form> <!--form é a teg últilizada para formulários-->
+                <div> 
+                    <label for="nome">Entre com seu nome:</label><!--label é ultilizado para o texto explicativo sobre um campo, é como um rótulo pra ele-->
+                    <!--o for serve para linkar com o id do campo, ou seja aponta para o campo-->
+                    <input type="text" id="nome" placeholder="Digite seu nome aqui:"></input><!--input é tag utilizada para campos de digitação--> <!--type serve para específicar o tipo de informação que será recebida-->
+                    <!--O placeholder serve para colocar um texto que vai dentro do campo-->
+                </div>
+                <div>
+                    <label for="email">Entre com seu e-mail:</label>
+                    <input type="text" id="email" placeholder="Digite seu email aqui:"></input>
+                </div>
+
+                <textarea placeholder="Faça seu pedido aqui:"></textarea><!--A textarea serve para colocar mensagens maiores-->
+
+                <button type="enviar">Enviar</button> <!--Tag de botão-->
+
+            </form>
+
+            <div id="redes_sociais">
+                <h2>Acesse também nossas redes sociais:</h2>
+                <div id="redes_sociais_imgs">
+                    <a href="#"><img src="./imagens/whats.png" alt="Imagem do WhatsApp"></a>
+                    <a href="#"><img src="./imagens/insta.png" alt="Imagem do Instagram"></a>
+                    <a href="#"><img src="./imagens/face.png" alt="Imagem do Facebook"></a>
+                </div>
+            </div>
+
+        </section>
+
+        <footer>
+            <h4>Nossa Loja - Instrumentos Musicais</h4>
+            <p>Rua Tito, 54 - Lapa <br />São Paulo - Brasil</p>
+            <div id="rodape_imgs">
+                <a href="#"><img src="./imagens/whats.png" alt="Imagem do WhatsApp"></a>
+                <a href="#"><img src="./imagens/insta.png" alt="Imagem do Instagram"></a>
+                <a href="#"><img src="./imagens/face.png" alt="Imagem do Facebook"></a>
+            </div>
+        </footer>
+    
+    </main>
+</body>
+</html>
